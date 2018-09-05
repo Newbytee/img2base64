@@ -1,6 +1,7 @@
 "use strict";
 
 const switchButtons = document.getElementsByClassName("actionTypeSwitcher");
+const mainContent = document.getElementById("mainContent");
 const sendDiv = document.getElementById("sendDiv");
 const receiveDiv = document.getElementById("receiveDiv");
 const ioArea = document.getElementById("ioArea");
@@ -26,19 +27,21 @@ for (let i = 0; i < switchButtons.length; i++) {
             switchButtons[i].addEventListener("click", function() {
                 sendDiv.style.display = "none";
                 receiveDiv.style.display = "inline-block";
+                mainContent.style.backgroundColor = "#663399";
             });
             break;
         case 1:
             switchButtons[i].addEventListener("click", function() {
                 sendDiv.style.display = "inline-block";
                 receiveDiv.style.display = "none";
+                mainContent.style.backgroundColor = "#FF4500";
             });
             break;
     }
 }
 
 if (navigator.serviceWorker.controller) {
-    console.log("[SW Installer] active service worker found, no need to register");
+    console.log("[SW Installer] Active service worker found, no need to register");
 } else {
     //Register the ServiceWorker
     navigator.serviceWorker.register("sw.js", {

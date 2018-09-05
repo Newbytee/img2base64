@@ -1,3 +1,5 @@
+"use strict";
+
 self.addEventListener('install', function(event) {
     const indexPage = new Request('index.html');
     event.waitUntil(
