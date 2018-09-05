@@ -2,7 +2,7 @@
   "short_name": "img2base64",
   "name": "Newbyte's img2base64",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/img2base64/index.html",
   "theme_color": "#2980b9",
   "background_color": "#2980b9",
   "lang": "English",
