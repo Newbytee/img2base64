@@ -1,0 +1,15 @@
+{
+  "short_name": "img2base64",
+  "name": "Newbyte's img2base64",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#2980b9",
+  "background_color": "#2980b9",
+  "lang": "English",
+  "orientation": "any",
+  "icons": [{
+    "src": "logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
